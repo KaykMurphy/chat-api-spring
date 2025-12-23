@@ -29,7 +29,7 @@ public class MessageService {
         Message savedMessage = messageRepository.save(message);
 
         if (presenceService.isUserOnline(receiver.getId())) {
-            System.out.println("⚡ Usuário " + receiver.getUsername() + " está ONLINE.");
+            System.out.println("Usuário " + receiver.getUsername() + " está ONLINE.");
         }
 
         return savedMessage;
