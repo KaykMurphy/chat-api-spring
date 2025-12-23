@@ -66,7 +66,7 @@ public class ChatWebSocketHandler extends TextWebSocketHandler {
         UUID userId = extractUserId(session);
         if (userId != null) {
             presenceService.markOffline(userId);
-            System.out.println("❌ Conexão encerrada: " + userId);
+            System.out.println("Conexão encerrada: " + userId);
         }
     }
 
